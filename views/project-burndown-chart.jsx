@@ -1,8 +1,11 @@
 import SectionMessage from '@atlaskit/section-message';
 import React from 'react';
 
-export default function HelloWorld() {
+export default function ProjectBurndownChart() {
   const [excitementLevel, setExcitementLevel] = React.useState(0);
+  console.log("test")
+  return <p>test</p>;
+
   return <SectionMessage
       title={`Hello, world${excitementLevel ? new Array(excitementLevel).fill('!').join('') : '.'}`}
       actions={[

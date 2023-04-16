@@ -1,13 +1,13 @@
 {
-    "key": "my-app",
-    "name": "My app",
-    "description": "My very first app",
+    "key": "ProjectBurndownChart",
+    "name": "Project Burndown Chart",
+    "description": "Project wide burndown chart.",
     "baseUrl": "{{localBaseUrl}}",
     "authentication": {
         "type": "jwt"
     },
     "lifecycle": {
-        "installed": "/installed"
+        "installed": "installed"
     },
     "scopes": [
         "READ"
@@ -18,23 +18,23 @@
     "modules": {
         "generalPages": [
             {
-                "key": "hello-world-page-jira",
+                "key": "project-burndown-chart-page-jira",
                 "location": "system.top.navigation.bar",
                 "name": {
-                    "value": "Hello World"
+                    "value": "Project Burndown Chart"
                 },
-                "url": "/hello-world",
+                "url": "/project-burndown-chart",
                 "conditions": [{
                     "condition": "user_is_logged_in"
                 }]
             },
             {
-                "key": "hello-world-page-confluence",
+                "key": "project-burndown-chart-page-confluence",
                 "location": "system.header/left",
                 "name": {
-                    "value": "Hello World"
+                    "value": "Project Burndown Chart"
                 },
-                "url": "/hello-world",
+                "url": "/project-burndown-chart",
                 "conditions": [{
                     "condition": "user_is_logged_in"
                 }]
