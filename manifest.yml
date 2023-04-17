@@ -1,0 +1,10 @@
+modules:
+  jira:projectPage:
+    - key: project-burndown-chart-hello-world-project-page
+      function: main
+      title: Project Burndown Chart
+  function:
+    - key: main
+      handler: index.run
+app:
+  id: ari:cloud:ecosystem::app/30e1d124-05de-475c-b84e-7acdaf16865e
