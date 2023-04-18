@@ -3,8 +3,20 @@ modules:
     - key: project-burndown-chart-hello-world-project-page
       function: main
       title: Project Burndown Chart
+      resolver:
+        function: resolverFunction
   function:
     - key: main
       handler: index.run
+functions:
+  - key: resolverFunction
+    handler: resolver.handler
+resources:
+  - key: main
+    path: static/app
 app:
   id: ari:cloud:ecosystem::app/30e1d124-05de-475c-b84e-7acdaf16865e
+permissions:
+  scopes:
+    - read:sprint:jira-software
+    - read:jira-work

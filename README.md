@@ -8,6 +8,8 @@ See [developer.atlassian.com/platform/forge/](https://developer.atlassian.com/pl
 
 See [Set up Forge](https://developer.atlassian.com/platform/forge/set-up-forge/) for instructions to get set up.
 
+forge register 
+
 ## Quick start
 - Install dependecies
 ```
@@ -25,7 +27,7 @@ forge deploy
 forge install
 ```
 
-- Develop your app by running `forge tunnel` to proxy invocations locally:
+- Develop your app by running `forge tunnel` to proxy invocations locally (Requires Docker):
 ```
 forge tunnel
 ```

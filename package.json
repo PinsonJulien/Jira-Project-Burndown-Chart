@@ -13,6 +13,9 @@
     "eslint-plugin-react-hooks": "^4.2.0"
   },
   "dependencies": {
+    "@forge/api": "^2.15.1",
+    "@forge/bridge": "^2.5.5",
+    "@forge/resolver": "^1.5.5",
     "@forge/ui": "1.8.1",
     "chart.js": "^4.2.1"
   }
